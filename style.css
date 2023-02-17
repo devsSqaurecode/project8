@@ -1,0 +1,42 @@
+/* default CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ECECEC;
+    color: #FFFFFF;
+}
+
+.container-fluid {
+    max-width: 98%;
+    margin: auto;
+}
+
+/* default CSS ends */
+
+
+/* Navbar CSS */
+.navbar-nav li{
+    margin-right: 35px;
+}
+
+.nav-link{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* Navbar CSS ends */
+
+.hero-img{
+    width: 100%;
+    height: 50vh;
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+}
