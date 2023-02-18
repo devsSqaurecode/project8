@@ -52,3 +52,11 @@ body{
     font-weight: 100;
     text-align: justify;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .hero-img {
+      height: auto;
+    }
+  }
