@@ -33,7 +33,7 @@ body{
 
 .hero-img{
     width: 100%;
-    height: 50vh;
+    height: auto;
 }
 
 .hero-img img{
@@ -52,11 +52,3 @@ body{
     font-weight: 100;
     text-align: justify;
 }
-
-
-
-@media only screen and (max-width: 600px) {
-    .hero-img {
-      height: auto;
-    }
-  }
