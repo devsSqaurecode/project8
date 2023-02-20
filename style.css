@@ -27,6 +27,11 @@ body{
 .nav-link{
     font-size: 18px;
     color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover{
+    color: #FFFFFF;
 }
 
 /* Navbar CSS ends */
@@ -51,4 +56,5 @@ body{
     line-height: 40px;
     font-weight: 100;
     text-align: justify;
+    font-family: 'Nunito', sans-serif;
 }
