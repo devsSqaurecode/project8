@@ -91,3 +91,80 @@ body{
 }
 
 /* Services CSS ends */
+
+/* Extra Info Section CSS */
+
+.extra_info_section{
+    background-color: #303030;
+}
+
+.extra_info_container{
+    padding: 10px;
+}
+
+.extra_info_text{
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Collaboration section css */
+
+.collaboration_section{
+    color: black;
+    padding:40px 0;
+}
+
+.first_step_heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+.first_step_paragraph{
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px 0;
+}
+
+button{
+    background-color: #303030;
+    padding: 11px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.iits_list{
+    padding: 20px 0;
+}
+
+.iits_list a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+/* Collaboration section css ends */
+
+/* Footer CSS*/
+
+footer{
+    background-color: #303030;
+    padding: 20px;
+}
+.footer-img-container{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-img-container img{
+    width: 100%;
+    height: 100%;
+}
+/* Footer CSS Ends*/
