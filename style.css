@@ -16,6 +16,14 @@ body{
     margin: auto;
 }
 
+nav{
+    border-bottom: 1px solid white;
+}
+
+header{
+    background-color: #303030;
+}
+
 /* default CSS ends */
 
 
@@ -46,18 +54,43 @@ body{
     height: 100%;
 }
 
-.hero-text-container{
+.hero-container{
     background-color: #303030;
-    padding: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.hero-text{
+.hero-text-heading{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+}
+
+.hero-text-paragraph{
     font-size: 24px;
     line-height: 40px;
     font-weight: 100;
     text-align: justify;
     font-family: 'Nunito', sans-serif;
 }
+
+.hero-primary-button, .hero-secondary-button{
+    background-color: white;
+    padding: 11px;
+    color: black;
+    border: none;
+    border-radius: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+.hero-secondary-button{
+    background-color: #303030;
+    border: 1px solid white;
+    color: white;
+    margin-left: 10px;
+}
+
 
 /* Services CSS */
 
