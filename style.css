@@ -11,6 +11,11 @@ body{
     color: #FFFFFF;
 }
 
+section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .container-fluid {
     max-width: 98%;
     margin: auto;
@@ -56,8 +61,8 @@ header{
 
 .hero-container{
     background-color: #303030;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .hero-text-heading{
@@ -131,9 +136,6 @@ header{
     background-color: #303030;
 }
 
-.extra_info_container{
-    padding: 10px;
-}
 
 .extra_info_text{
     font-size: 24px;
@@ -147,7 +149,7 @@ header{
 
 .collaboration_section{
     color: black;
-    padding:40px 0;
+    /* padding:40px 0; */
 }
 
 .first_step_heading{
