@@ -26,12 +26,18 @@
             font-size: 24px;
             font-family: 'Nunito', sans-serif;
         }
+        .contact-info-row{
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
     </style>
     <link rel="stylesheet" href="style.css">
     <title>Prototypic</title>
 </head>
 <body>
-    <!-- Header -->
+            <!-- Header -->
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg" style="background-color:#303030">
@@ -59,51 +65,65 @@
         </nav>
           <!-- Navbar ends -->
         <div class="container text-center header-text">
-            <h2>Our Services</h2>
-            <p>Your company can explore various modes of partnership with IITs <br>
-                (IIT Kanpur, IIT Delhi, IIT Bombay, IIT Madras, IIT Kharagpur)</p>
+            <h2>Contact Us</h2>
+            <p>In case your company is desirous of partnering with premier IITs 
+                <br>You can contact us</p>
         </div>
     </header>
-    <section class="container m-auto mt-2 mb-2 service-page-section">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="/assests/img/Services/Service 1.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> <b>INCUBATED START-UP AS YOUR RESEARCH PARTNER</b></h5>
-                <p class="card-text">Our unique and novel product is nurturing collaboration between your company and an incubated company</p>
-              </div>
-              <div class="card-footer">
-                <small class="card-footer-text"> <a href="#"> Know more </a></small>
-              </div>
+    <!-- contact us page section -->
+    <section class="contact-section">
+        <div class="container row m-auto contact-info-row">
+            <div class="col-lg-4">
+                <h5>Dr. Amit K. Shukla, Ph.D., IIT KANPUR <br><br> Chief Executive Officer, Prototypic Solutions </p\h5>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="/assests/img/Services/Service 2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><b>EXPLORATORY<br><br></b></h5>
-                <p class="card-text">Often you have the insight about the market but do not have an idea about the product or service. We give you patents filed by major IITs to explore new buisnesses</p>
-              </div>
-              <div class="card-footer">
-                <small class="card-footer-text"> <a href="#"> Know more </a></small>
-              </div>
+            <div class="col-lg-4">
+                <h5>ceo@prototypic.co</h5>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="/assests/img/Services/Service 3.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><b>CUSTOMIZED<br><br></b></h5>
-                <p class="card-text">Depending on the problems faced by your companies- Short-term (1 to 6 months); Mid-term (6 to 24 months); Long-term: (1 to 5 years).</p>
-              </div>
-              <div class="card-footer">
-                <small class="card-footer-text"> <a href="#">Know more</a></small>
-              </div>
+            <div class="col-lg-4">
+                <h5>+91-9198 535123</h5>
             </div>
-          </div>
         </div>
-      </section>
+        <div class="container m-auto">
+            <form class="row g-3">
+                <div class="col-lg-4">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-lg-4">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-lg-4">
+                    <label for="mobile" class="form-label">Mobile</label>
+                  <input type="tel" class="form-control" id="mobile">
+                </div>
+                <div class="col-lg-6">
+                    <label for="product_service" class="form-label">Product/Service</label>
+                  <input type="text" class="form-control" id="product_service">
+                </div>
+                <div class="col-lg-6">
+                    <label for="sales_turnover" class="form-label">Sales/Turnover</label>
+                  <input type="text" class="form-control" id="sales_turnover">
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Default radio
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Default checked radio
+                        </label>
+                      </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </section>
+    <!-- contact us page section ends-->
     <!-- Footer -->
     <footer>
         <div class="d-flex justify-content-between container">
@@ -112,7 +132,7 @@
           </div>
           <div class="footer-details-container">
             <h3>Contact Us</h3><br>
-            <p>Dr. Amit K. Shukla, Ph.D., IIT KANPUR <br><br> Chief Executive Officer, Prototypic Solutions </p>
+            <p>Dr. Amit K. Shukla, Ph.D., IIT KANPUR; Chief Executive Officer, Prototypic Solutions </p>
             <p>ceo@prototypic.co</p>
             <p>+91-9198 535123</p>
           </div>
