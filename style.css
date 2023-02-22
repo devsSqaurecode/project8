@@ -169,6 +169,11 @@ header{
 
 /* Collaboration section css */
 
+iframe{
+    width: 100%;
+    height: 310px;
+}
+
 .collaboration_section{
     color: black;
     /* padding:40px 0; */
