@@ -37,6 +37,12 @@
         }
     </style>
     <link rel="stylesheet" href="style.css">
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript" src="../app.js" defer></script>
+
     <title>Prototypic</title>
 </head>
 <body>
@@ -121,13 +127,13 @@
                 <div class="col-lg-4">
                   <p class="form-label">Are you engaged in manufacturing</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_yes">
+                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_yes" value="Yes">
                         <label class="form-check-label" for="manufacturing_yes">
                           Yes
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_no" checked>
+                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_no" value="No" checked>
                         <label class="form-check-label" for="manufacturing_no">
                           No
                         </label>
@@ -136,13 +142,13 @@
                 <div class="col-lg-4">
                   <p class="form-label">Have you ever filed any Patent?</p>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="patent" id="patent_yes">
+                    <input class="form-check-input" type="radio" name="patent" id="patent_yes" value="Yes">
                     <label class="form-check-label" for="patent_yes">
                       Yes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="patent" id="patent_no" checked>
+                    <input class="form-check-input" type="radio" name="patent" id="patent_no" value="No" checked>
                     <label class="form-check-label" for="patent_no">
                       No
                     </label>
@@ -151,13 +157,13 @@
                 <div class="col-lg-4">
                   <p class="form-label">Have you ever collaborated for R&D with any third-party?</p>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="collab" id="collab_yes">
+                    <input class="form-check-input" type="radio" name="collab" id="collab_yes" value="Yes">
                     <label class="form-check-label" for="collab_yes">
                       Yes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="collab" id="collab_no" checked>
+                    <input class="form-check-input" type="radio" name="collab" id="collab_no" value="No" checked>
                     <label class="form-check-label" for="collab_no">
                       No
                     </label>
@@ -191,7 +197,7 @@
           </div>
           <div class="col-lg-12">
             <p class="form-label">Do you think that your company can benefit from collaboration with any IIT or academic or research Institute?</p>
-            <select class="form-select">
+            <select class="form-select" id="benefit">
               <option value="Totally useless">Totally useless</option>
               <option value="Useless">Useless</option>
               <option value="Don't know">Don't Know</option>
@@ -200,7 +206,8 @@
             </select>
             
           </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary"            onclick="sendMail()"
+                >Submit</button>
               </form>
         </div>
     </section>
