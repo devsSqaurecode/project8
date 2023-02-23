@@ -32,6 +32,9 @@
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
+        .form-label, .form-check-label{
+          color: black;
+        }
     </style>
     <link rel="stylesheet" href="style.css">
     <title>Prototypic</title>
@@ -74,7 +77,7 @@
     <section class="contact-section">
         <div class="container row m-auto contact-info-row">
             <div class="col-lg-4">
-                <h5>Dr. Amit K. Shukla, Ph.D., IIT KANPUR <br><br> Chief Executive Officer, Prototypic Solutions </p\h5>
+                <h5>Dr. Amit K. Shukla, Ph.D., IIT KANPUR <br><br> Chief Executive Officer, Prototypic Solutions </h5>
             </div>
             <div class="col-lg-4">
                 <h5>ceo@prototypic.co</h5>
@@ -98,6 +101,10 @@
                   <input type="tel" class="form-control" id="mobile">
                 </div>
                 <div class="col-lg-6">
+                    <label for="location" class="form-label">Location</label>
+                  <input type="text" class="form-control" id="location">
+                </div>
+                <div class="col-lg-6">
                     <label for="product_service" class="form-label">Product/Service</label>
                   <input type="text" class="form-control" id="product_service">
                 </div>
@@ -105,20 +112,92 @@
                     <label for="sales_turnover" class="form-label">Sales/Turnover</label>
                   <input type="text" class="form-control" id="sales_turnover">
                 </div>
+                <div class="col-lg-6">
+                    <label for="no_of_employees" class="form-label">Number of Employees</label>
+                  <input type="number" class="form-control" id="no_of_employees">
+                </div>
                 <div class="col-lg-4">
+                  <p class="form-label">Are you engaged in manufacturing</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Default radio
+                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_yes">
+                        <label class="form-check-label" for="manufacturing_yes">
+                          Yes
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Default checked radio
+                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_no" checked>
+                        <label class="form-check-label" for="manufacturing_no">
+                          No
                         </label>
                       </div>
                 </div>
+                <div class="col-lg-4">
+                  <p class="form-label">Have you ever filed any Patent?</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="patent" id="patent_yes">
+                    <label class="form-check-label" for="patent_yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="patent" id="patent_no" checked>
+                    <label class="form-check-label" for="patent_no">
+                      No
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="form-label">Have you ever collaborated for R&D with any third-party?</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="collab" id="collab_yes">
+                    <label class="form-check-label" for="collab_yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="collab" id="collab_no" checked>
+                    <label class="form-check-label" for="collab_no">
+                      No
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                    <label for="priority" class="form-label">What is the top priority of your company?</label>
+                  <textarea class="form-control" id="priority"></textarea>
+                </div>
+                <div class="col-lg-6">
+                    <label for="source" class="form-label">What is the source of your technology in the product/service?</label>
+                  <textarea class="form-control" id="source"></textarea>
+                </div>
+                <div class="col-lg-6">
+                    <label for="budget_percentage" class="form-label">Do you allocate any budget for R&D? If yes, could you give a percentage in terms of total sales.
+</label>
+                  <textarea class="form-control" id="budget_percentage"></textarea>
+                </div>
+                <div class="col-lg-6">
+                  <label for="collab_initiation" class="form-label">Do you know the process about initiating a collaboration an IIT academic/research Institute?</label>
+                <textarea class="form-control" id="collab_initiation"></textarea>
+              </div>
+                <div class="col-lg-6">
+                  <label for="major_challenges" class="form-label">What do you think are the major challenges in Industry-academia collaboration?</label>
+                <textarea class="form-control" id="major_challenges"></textarea>
+              </div>
+            
+            <div class="col-lg-6">
+              <label for="iit_expectation" class="form-label">Tell us what do you expect from an IIT academic/research Institute?</label>
+            <textarea class="form-control" id="iit_expectation"></textarea>
+          </div>
+          <div class="col-lg-12">
+            <p class="form-label">Do you think that your company can benefit from collaboration with any IIT or academic or research Institute?</p>
+            <select class="form-select">
+              <option value="Totally useless">Totally useless</option>
+              <option value="Useless">Useless</option>
+              <option value="Don't know">Don't Know</option>
+              <option value="Useful">Useful</option>
+              <option value="Totally useful" selected>Totally Useful</option>
+            </select>
+            
+          </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>
