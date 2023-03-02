@@ -99,6 +99,5 @@ function sendMail() {
         document.getElementById("major_challenges").value = ""
         document.getElementById("iit_expectation").value = ""
         document.getElementById("benefit").value = ""
-
     }
 }
