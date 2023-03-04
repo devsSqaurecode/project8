@@ -32,6 +32,11 @@ nav{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
 }
 
 header{
@@ -232,17 +237,22 @@ button{
 footer{
     background-color: #303030;
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .footer-img-container{
     display: flex;
     width: auto;
-    height: 100px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
 }
 .footer-img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 /* Footer CSS Ends*/
