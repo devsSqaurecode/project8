@@ -261,6 +261,7 @@ footer{
 @media screen and (max-width: 992px) {
     .navbar-brand{
         font-size: 14px;
+        margin: 0;
     }
     .footer-img-container h5{
         font-size: 14px;
