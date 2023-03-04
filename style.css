@@ -244,7 +244,7 @@ footer{
 }
 .footer-img-container{
     display: flex;
-    width: auto;
+    /* width: auto; */
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -254,6 +254,9 @@ footer{
 .footer-img{
     width: 70px;
     height: 70px;
+}
+.footer-img-container h5{
+    font-size: 18px;
 }
 /* Footer CSS Ends*/
 
