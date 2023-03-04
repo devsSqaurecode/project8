@@ -244,7 +244,7 @@ footer{
 }
 .footer-img-container{
     display: flex;
-    /* width: auto; */
+    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -262,17 +262,21 @@ footer{
 
 
 @media screen and (max-width: 992px) {
+    footer{
+        justify-content: space-between;
+    }
     .navbar-brand{
         font-size: 14px;
         margin: 0;
     }
     .footer-img-container h5{
-        font-size: 14px;
+        font-size: 13px;
     }
   }
 
   @media screen and (max-width: 375px) {
     .footer-img-container h5{
-        font-size: 12px;
+        font-size: 13px;
+
     }
   }
