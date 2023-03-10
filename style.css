@@ -233,28 +233,49 @@ button {
 
 /* Footer CSS*/
 
-footer {
+footer{
   background-color: #303030;
   padding: 20px;
+}
+
+.footer{
+  background-color: #303030;
+  /* padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-}
-.footer-img-container {
+  margin: auto;
+  width: auto;
+  flex-direction: row; */
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.footer-img-container{
+  /* width: 100%; */
+  /* display: flex;
   width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  /* display: block;
+  flex: 1;
+  text-align: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.footer-img {
+.footer-img{
+  text-align: center;
   width: 70px;
   height: 70px;
 }
-.footer-img-container h5 {
+.footer-img-container h5{
   font-size: 18px;
 }
 /* Footer CSS Ends*/
@@ -279,7 +300,27 @@ footer {
 /* Contact css ends */
 
 @media screen and (max-width: 992px) {
-  footer {
+    .footer{
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+  }
+  .footer-img-container{
+      flex-wrap: wrap;
+      gap: 4px;
+  }
+  .navbar-brand{
+      font-size: 14px;
+      margin: 0;
+  }
+  .footer-img-container h5{
+      font-size: 13px;
+  }
+  .footer-details-container{
+      margin-top: 10px;
+      text-align: center;
+  }footer {
     justify-content: space-between;
   }
   .navbar-brand {
