@@ -313,6 +313,12 @@ footer{
 /* Contact css ends */
 
 @media screen and (max-width: 992px) {
+  .hero-text-paragraph{
+    margin-bottom: 2rem;
+  }
+  .first_step_container{
+    margin-bottom: 2rem;
+  }
   .navbar-brand{
     display: flex;
     align-items: center;
