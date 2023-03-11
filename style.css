@@ -62,6 +62,9 @@ header {
 /* Modal CSS Ends */
 
 /* Navbar CSS */
+.navbar-brand:hover{
+  color: white;
+}
 .navbar-nav li {
   margin-right: 35px;
 }
