@@ -38,6 +38,9 @@ nav {
   align-items: center;
   gap: 4px;
 }
+.navbar-brand p{
+  margin-bottom: 0;
+}
 
 header {
   background-color: #303030;
@@ -80,7 +83,9 @@ header {
 }
 
 /* Navbar CSS ends */
-
+.mobile-navbar-text{
+  display: none;
+}
 .hero-img {
   width: 100%;
   height: auto;
@@ -300,12 +305,26 @@ footer{
 .submit-successful-message.visible {
   display: block;
 }
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Contact css ends */
 
 @media screen and (max-width: 992px) {
   .navbar-brand{
-    width: 75%;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .desktop-navbar-text{
+    display: none;
+  }
+  .mobile-navbar-text{
+    display: block;
+    text-align: left;
   }
     .footer{
       flex-wrap: wrap;
