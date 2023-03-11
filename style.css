@@ -303,6 +303,10 @@ footer{
 /* Contact css ends */
 
 @media screen and (max-width: 992px) {
+  .navbar-brand{
+    width: 75%;
+    margin: auto;
+  }
     .footer{
       flex-wrap: wrap;
       justify-content: space-between;
