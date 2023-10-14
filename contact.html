@@ -1,91 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assests/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="/assests/img/logo.png" />
     <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
     <!-- Custom CSS -->
     <style>
-        .header-text{
-            padding: 4rem;
-        }
+      .header-text {
+        padding: 4rem;
+      }
 
-        .header-text h2{
-            font-size: 38px;
-            font-family: 'Roboto', sans-serif;
-            /* padding-bottom: 10px; */
-        }
-        .header-text p{
-            font-size: 24px;
-            font-family: 'Nunito', sans-serif;
-        }
-        .contact-info-row{
-            color: white;
-            font-size: 18px;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-        }
-        .form-label, .form-check-label{
-          color: black;
-        }
+      .header-text h2 {
+        font-size: 38px;
+        font-family: "Roboto", sans-serif;
+        /* padding-bottom: 10px; */
+      }
+      .header-text p {
+        font-size: 24px;
+        font-family: "Nunito", sans-serif;
+      }
+      .contact-info-row {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+      .form-label,
+      .form-check-label {
+        color: black;
+      }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-  ></script>
-  <script type="text/javascript" src="../app.js" defer></script>
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="../app.js" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FVYML0SYWS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FVYML0SYWS");
+    </script>
 
     <title>Prototypic</title>
-</head>
-<body>
-  <!--Submit successful message-->
-  <div class="submit-successful-message" id="submit-successful-message">Thank you your response has been submitted. Our team shall connect with you soon.</div>
-  <!--Submit successful message ends-->
-            <!-- Header -->
+  </head>
+  <body>
+    <!--Submit successful message-->
+    <div class="submit-successful-message" id="submit-successful-message">
+      Thank you your response has been submitted. Our team shall connect with
+      you soon.
+    </div>
+    <!--Submit successful message ends-->
+    <!-- Header -->
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg" style="background-color:#303030">
-            <div class="container-fluid">
-              <a class="navbar-brand text-center" href="index.html">
-                <img src="./assests/img/logo.png" alt="oops" width="60" height="60">
-                <p class="mobile-navbar-text"><b>CONNECT<br>COLLABORATE<br>DIFFERENTIATE</b></p>
-                <p class="desktop-navbar-text"><b>CONNECT AND COLLABORATE AND DIFFERENTIATE</b></p>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:white">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>    
-        </nav>
-          <!-- Navbar ends -->
-        <div class="container text-center header-text">
-            <!-- <h2 class="pb-4">Contact Us</h2> -->
-            <div class="container row m-auto contact-info-row">
-              <p style="font-size: 24px;font-family: 'Nunito', sans-serif">In case your company is desirous of partnering with premier IITs 
-                <br>Take the first step</p>
-                <!-- <div class="col-lg-12">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg" style="background-color: #303030">
+        <div class="container-fluid">
+          <a class="navbar-brand text-center" href="index.html">
+            <img
+              src="./assests/img/logo.png"
+              alt="oops"
+              width="60"
+              height="60"
+            />
+            <p class="mobile-navbar-text">
+              <b>CONNECT<br />COLLABORATE<br />DIFFERENTIATE</b>
+            </p>
+            <p class="desktop-navbar-text">
+              <b>CONNECT AND COLLABORATE AND DIFFERENTIATE</b>
+            </p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: white"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar ends -->
+      <div class="container text-center header-text">
+        <!-- <h2 class="pb-4">Contact Us</h2> -->
+        <div class="container row m-auto contact-info-row">
+          <p style="font-size: 24px; font-family: 'Nunito', sans-serif">
+            In case your company is desirous of partnering with premier IITs
+            <br />Take the first step
+          </p>
+          <!-- <div class="col-lg-12">
                     <h5>Dr. Amit K. Shukla, Ph.D., IIT KANPUR,<br> CEO, Prototypic Solutions </h5>
                 </div>
                 <div class="col-lg-6">
@@ -94,114 +143,172 @@
                 <div class="col-lg-6">
                     <h5>+91-9198 535123</h5>
                 </div> -->
-            </div>
         </div>
+      </div>
     </header>
     <!-- contact us page section -->
     <section class="contact-section">
-        <div class="container m-auto">
-            <form class="row g-3">
-                <div class="col-lg-4">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="col-lg-4">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-                <div class="col-lg-4">
-                    <label for="mobile" class="form-label">Mobile</label>
-                  <input type="tel" class="form-control" id="mobile">
-                </div>
-                <div class="col-lg-6">
-                    <label for="location" class="form-label">Location</label>
-                  <input type="text" class="form-control" id="location">
-                </div>
-                <div class="col-lg-6">
-                    <label for="product_service" class="form-label">Product/Service</label>
-                  <input type="text" class="form-control" id="product_service">
-                </div>
-                <div class="col-lg-6">
-                    <label for="sales_turnover" class="form-label">Sales/Turnover</label>
-                  <input type="text" class="form-control" id="sales_turnover">
-                </div>
-                <div class="col-lg-6">
-                    <label for="no_of_employees" class="form-label">Number of Employees</label>
-                  <input type="number" class="form-control" id="no_of_employees">
-                </div>
-                <div class="col-lg-4">
-                  <p class="form-label">Are you engaged in manufacturing</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_yes" value="Yes">
-                        <label class="form-check-label" for="manufacturing_yes">
-                          Yes
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="manufacturing" id="manufacturing_no" value="No" checked>
-                        <label class="form-check-label" for="manufacturing_no">
-                          No
-                        </label>
-                      </div>
-                </div>
-                <div class="col-lg-4">
-                  <p class="form-label">Have you ever filed any Patent?</p>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="patent" id="patent_yes" value="Yes">
-                    <label class="form-check-label" for="patent_yes">
-                      Yes
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="patent" id="patent_no" value="No" checked>
-                    <label class="form-check-label" for="patent_no">
-                      No
-                    </label>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <p class="form-label">Have you ever collaborated for R&D with any third-party?</p>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="collab" id="collab_yes" value="Yes">
-                    <label class="form-check-label" for="collab_yes">
-                      Yes
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="collab" id="collab_no" value="No" checked>
-                    <label class="form-check-label" for="collab_no">
-                      No
-                    </label>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                    <label for="priority" class="form-label">What is the top priority of your company?</label>
-                  <textarea class="form-control" id="priority"></textarea>
-                </div>
-                <div class="col-lg-6">
-                    <label for="source" class="form-label">What is the source of your technology in the product/service?</label>
-                  <textarea class="form-control" id="source"></textarea>
-                </div>
-                <div class="col-lg-6">
-                    <label for="budget_percentage" class="form-label">Do you allocate any budget for R&D? If yes, could you give a percentage in terms of total sales.
-</label>
-                  <textarea class="form-control" id="budget_percentage"></textarea>
-                </div>
-                <div class="col-lg-6">
-                  <label for="collab_initiation" class="form-label">Do you know the process about initiating a collaboration an IIT academic/research Institute?</label>
-                <textarea class="form-control" id="collab_initiation"></textarea>
-              </div>
-                <div class="col-lg-6">
-                  <label for="major_challenges" class="form-label">What do you think are the major challenges in Industry-academia collaboration?</label>
-                <textarea class="form-control" id="major_challenges"></textarea>
-              </div>
-            
-            <div class="col-lg-6">
-              <label for="iit_expectation" class="form-label">Tell us what do you expect from an IIT academic/research Institute?</label>
+      <div class="container m-auto">
+        <form class="row g-3">
+          <div class="col-lg-4">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="col-lg-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="col-lg-4">
+            <label for="mobile" class="form-label">Mobile</label>
+            <input type="tel" class="form-control" id="mobile" />
+          </div>
+          <div class="col-lg-6">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" />
+          </div>
+          <div class="col-lg-6">
+            <label for="product_service" class="form-label"
+              >Product/Service</label
+            >
+            <input type="text" class="form-control" id="product_service" />
+          </div>
+          <div class="col-lg-6">
+            <label for="sales_turnover" class="form-label"
+              >Sales/Turnover</label
+            >
+            <input type="text" class="form-control" id="sales_turnover" />
+          </div>
+          <div class="col-lg-6">
+            <label for="no_of_employees" class="form-label"
+              >Number of Employees</label
+            >
+            <input type="number" class="form-control" id="no_of_employees" />
+          </div>
+          <div class="col-lg-4">
+            <p class="form-label">Are you engaged in manufacturing</p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="manufacturing"
+                id="manufacturing_yes"
+                value="Yes"
+              />
+              <label class="form-check-label" for="manufacturing_yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="manufacturing"
+                id="manufacturing_no"
+                value="No"
+                checked
+              />
+              <label class="form-check-label" for="manufacturing_no">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <p class="form-label">Have you ever filed any Patent?</p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="patent"
+                id="patent_yes"
+                value="Yes"
+              />
+              <label class="form-check-label" for="patent_yes"> Yes </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="patent"
+                id="patent_no"
+                value="No"
+                checked
+              />
+              <label class="form-check-label" for="patent_no"> No </label>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <p class="form-label">
+              Have you ever collaborated for R&D with any third-party?
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="collab"
+                id="collab_yes"
+                value="Yes"
+              />
+              <label class="form-check-label" for="collab_yes"> Yes </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="collab"
+                id="collab_no"
+                value="No"
+                checked
+              />
+              <label class="form-check-label" for="collab_no"> No </label>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <label for="priority" class="form-label"
+              >What is the top priority of your company?</label
+            >
+            <textarea class="form-control" id="priority"></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label for="source" class="form-label"
+              >What is the source of your technology in the
+              product/service?</label
+            >
+            <textarea class="form-control" id="source"></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label for="budget_percentage" class="form-label"
+              >Do you allocate any budget for R&D? If yes, could you give a
+              percentage in terms of total sales.
+            </label>
+            <textarea class="form-control" id="budget_percentage"></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label for="collab_initiation" class="form-label"
+              >Do you know the process about initiating a collaboration an IIT
+              academic/research Institute?</label
+            >
+            <textarea class="form-control" id="collab_initiation"></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label for="major_challenges" class="form-label"
+              >What do you think are the major challenges in Industry-academia
+              collaboration?</label
+            >
+            <textarea class="form-control" id="major_challenges"></textarea>
+          </div>
+
+          <div class="col-lg-6">
+            <label for="iit_expectation" class="form-label"
+              >Tell us what do you expect from an IIT academic/research
+              Institute?</label
+            >
             <textarea class="form-control" id="iit_expectation"></textarea>
           </div>
           <div class="col-lg-12">
-            <p class="form-label">Do you think that your company can benefit from collaboration with any IIT or academic or research Institute?</p>
+            <p class="form-label">
+              Do you think that your company can benefit from collaboration with
+              any IIT or academic or research Institute?
+            </p>
             <select class="form-select" id="benefit">
               <option value="Totally useless">Totally useless</option>
               <option value="Useless">Useless</option>
@@ -209,12 +316,12 @@
               <option value="Useful">Useful</option>
               <option value="Totally useful" selected>Totally Useful</option>
             </select>
-            
           </div>
-                <button type="submit" class="btn btn-primary"            onclick="sendMail()"
-                >Submit</button>
-              </form>
-        </div>
+          <button type="submit" class="btn btn-primary" onclick="sendMail()">
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
     <!-- contact us page section ends-->
     <!-- Footer -->
@@ -222,20 +329,33 @@
       <div class="footer container">
         <div class="footer-img-container">
           <!-- Footer images -->
-          <img class="footer-img" style="float: left;" src="./assests/img/logo.png" alt="">
-          <h5> <b> CONNECT AND COLLABORATE AND DIFFERENTIATE </b></h5>
+          <img
+            class="footer-img"
+            style="float: left"
+            src="./assests/img/logo.png"
+            alt=""
+          />
+          <h5><b> CONNECT AND COLLABORATE AND DIFFERENTIATE </b></h5>
         </div>
         <div class="footer-details-container">
-          <h3>Contact Us</h3><br>
-          <p>Dr. Amit K. Shukla, Ph.D., IIT KANPUR <br><br> Chief Executive Officer, Prototypic Solutions </p>
+          <h3>Contact Us</h3>
+          <br />
+          <p>
+            Dr. Amit K. Shukla, Ph.D., IIT KANPUR <br /><br />
+            Chief Executive Officer, Prototypic Solutions
+          </p>
           <p>ceo@prototypic.co</p>
           <p>+91-9198 535123</p>
         </div>
       </div>
     </footer>
     <!-- Footer ends -->
-  
+
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
